@@ -1,0 +1,136 @@
+html{
+    height: 100%;
+    background:radial-gradient(circle,#fff,#ccc);
+}
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: aquamarine;
+    margin:100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px blue;
+    position: relative;
+}
+#score{
+    background-color: lime;
+    color: blue;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 0px 4px 4px 0px green;
+}
+#correct{
+    position: absolute;
+    left:250px;
+    background-color: green;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 4px 4px 0px green;
+    display: none;
+}
+#wrong{
+    position: absolute;
+    left:250px;
+    background-color:red;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 4px 4px 0px black;
+    display: none;
+    
+}
+#qus{
+    width: 450px;
+    height: 150px;
+    margin:50px auto 10px auto;
+    background-color:#D9A3DE;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive;
+    box-shadow: 0px 4px 4px 0px;
+/*    color: purple*/
+}
+#instruction{
+    width: 450px;
+    height: 50px;
+    margin: 10px auto;
+    
+    background-color: #BD77BB;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px 4px ;
+}
+#option{
+    width: 450px;
+    height: 100px;
+    margin:5px auto;
+    
+}
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px grey;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all .2s;
+}
+.box:hover, #reset:hover{
+    background-color:#9050A0 ;
+    color: white;
+    box-shadow: 0px 4px 4px 0px #6F276C;
+}
+.box:active, #reset:active{
+    box-shadow: 0px 0px #6F276C;
+    top:4px;
+    
+   
+}
+#box4{
+    margin-right: 0px;
+}
+#reset{
+     width: 78px;
+    background-color: rgba(255 255 255 .5);
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px grey;
+    text-align: center;
+    position: relative;
+    transition: all .2s;
+}
+#time{
+    width: 152px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left:400px;
+    background-color: rgba(181,235,36,.78);
+    border-radius: 80px;
+    box-shadow: 0px 4px 4px 0px grey;
+/*    visibility: hidden;*/
+    display:none;
+    
+    
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    background:linear-gradient(#F6CD02,#F87E4D);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+}
